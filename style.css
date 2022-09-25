@@ -1,0 +1,422 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Poppins' sans-serif;
+    box-sizing: border-box;
+}
+body{
+    color: rgb(241, 237, 237);
+   background:rgb(0, 0, 0);
+}
+#header{
+    width: 100% ;
+    height: 100vh ;
+   
+  }
+ .container{
+    padding: 10px 10%;
+    background-color:rgb(0, 0, 0);
+ }
+ nav{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+ }
+ .logo{
+   width: 140px; 
+   height: 140px;
+transform: translateY(-40px);
+ 
+ }
+ nav ul li{
+    transform: translateY(-40px);
+ position: static;
+    display:inline-block;
+    list-style: none;
+    margin: 10px 20px;
+ }
+ nav ul li a{
+    color: rgb(255, 252, 252);
+    text-decoration: none;
+    font-size: 18px;
+position: relative;
+ }
+ nav ul li a::after{
+    content: '';
+    width:0%;
+    height: 3px;
+    background:yellow;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+ }
+ nav ul li a:hover::after{
+    width: 100%;
+ }
+ .data{
+    margin-left: 8%;
+    margin-top: 17%;
+}
+.data h1{
+    font-size: 50px;
+    color:#faf4f4 ;
+    margin-top:6px;
+    /* margin: bottom 20px; */
+}
+.data p {
+  font-size: 20px;
+    color:grey ;
+    margin-top: 6px;
+}
+
+span{
+    color: yellow;
+}
+.myprofile{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0%;
+    right: 100px;
+}
+.myprofile img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 1s;
+}
+.myprofile:hover .d{
+    bottom: 40px;
+}
+.myprofile:hover .k{
+left:45%;
+}
+#about{
+    padding:80px  0;
+color: antiquewhite;
+
+}
+.acont{
+  
+    display: flex;
+     flex-wrap: wrap;
+    justify-content:center;
+   
+}
+.about1{
+    font-size: 60px;
+    font-weight: 600;
+   color: white;
+  }
+ .para{
+    padding: 100px;
+    padding-top: 2%;
+    line-height:1.7rem;
+     color: rgb(187, 183, 183);
+    font-size: 20px;
+  display: flex;
+ }
+ .title{
+    display: flex;
+    margin: 20px 0 40px;
+ }
+ .t1{
+margin-right: 150px;
+font-size: 18px;
+font-weight: 500;
+cursor: pointer;
+position: relative;
+ }
+
+.t1::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:rgb(255, 255, 1);
+    position: absolute;
+    left: 0%;
+    bottom: -8px ;
+    transition: 0.5s;
+}
+.t1.actives::after{
+    width: 50%;
+}
+.text{
+    padding-left: 450px;
+    display: none;
+}
+
+ .text ul li,.text1 ul li{
+    list-style: none;
+    
+    margin: 10px 0;
+} 
+.text ul li span{
+    color: yellow;
+    font-size: 14px;
+ }  
+  .text.active{
+    display: block;
+  }
+
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display:grid;
+    
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+.services-list div{
+
+   text-align: center;
+    background: rgba(178, 175, 90, 0.906);
+    font-size: 13px;
+    padding: 20px;
+    font-weight: 300;
+    border-radius: 20px;
+}
+.image{
+    height: 100px;
+    width: 100px;
+}
+.sub-tittle{
+    padding-left: 400px;
+    font-size: 50px;
+}
+.paras{
+    padding-top: 10px;
+    padding-left: 350px;
+    color: gray;
+    font-size: 20px;
+}
+
+#protfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display:grid;
+    
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position:relative;
+    overflow: hidden;
+    
+}
+.work img{
+    height: 300px;
+   transition:transform 0.5s;
+    width:80%;
+    border-radius: 10px;
+    display:block;
+}
+.a{
+    text-decoration: none;
+}
+.layer{
+    width:84%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),rgb(250, 250, 0));
+border-radius: 10px;
+position: absolute;
+left: 0;
+bottom: 0;
+overflow: hidden;
+display:flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+padding: 0 40px;
+text-align: center;
+font-size: 14px;
+transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a{
+    margin-top: 20px;
+    text-decoration: none;
+    color: yellow;
+    font-size:18px;
+    line-height:60px ;
+    background: #fff;
+    width:60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.work:hover img{
+transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+color: yellow;
+margin-right: 15px;
+font-size: 25px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+}
+.social-icons{
+    margin-top: 30px;
+}
+/* .sub-tittles{
+    margin-top: 80px;
+} */
+.social-icons a:hover{
+    color: yellow;
+    transform: translateY(-5px);
+
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid yellow;
+padding: 14px;
+border-radius: 5px;
+color: white;
+       /* background-color: yellow; */
+       text-decoration: none; 
+      transition: background 0.5s;
+    }
+    .btn:hover{
+        background: rgb(102, 102, 17);
+    }
+   .btn.btn1{
+    font-weight: 800;
+    display: inline-block;
+    background: rgb(168, 168, 20);
+    }
+    .contact-right form{
+        width: 100%;
+    }
+    form input,form textarea{
+        width: 100%;
+        outline: none;
+        border: 0;
+        background: #262626;
+        padding: 15px;
+        margin: 15px 0;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+   form .btn1{
+padding:14px 60px;
+font-size:18px;
+margin-top: 20px;
+cursor: pointer;
+   }
+   .copyright{
+    width:100%;
+    text-align: center;
+    padding:25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+   }
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+   .copyright i{
+    color: red;
+   }
+   .paras1{
+    padding-top: 10px;
+   
+    color: gray;
+    font-size: 20px;
+}
+.sub-tittles{
+    
+    font-size: 50px;
+}
+
+/* .............response............... */
+
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px){
+   .myprofile{
+    transform: translateY(120px);
+    height: 450px;
+    width:200px ;
+    bottom: 0;
+   }
+   
+.myprofile:hover .d{
+    bottom: 10px;
+}
+.myprofile:hover .k{
+left:15%;
+} 
+ .data{
+    margin-left: 8%;
+    margin-top: 30%;
+}
+nav .fa-solid{
+    display:block;
+    font-size: 25px;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav ul{
+    background-color: yellow;
+    position: fixed;
+    top:0;
+    right:-200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+}
+.sub-tittle,.sub-tittles{
+    font-size: 40px;
+}
+nav ul li{
+    display: block;
+}
+nav ul .fa-solid{
+    position: absolute;
+    top:25px;
+    left: 25px;
+    cursor: pointer;
+}
+}
